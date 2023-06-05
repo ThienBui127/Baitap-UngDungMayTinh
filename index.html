@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="formInput">
+        <input type="number" id="a" placeholder="nhập A" value="">
+        <input type="number" id="b" placeholder="nhập B" value="">
+    </form>
+    <button onclick="ketQuaCong()">Addition(+)</button>
+    <button onclick="ketQuaTru()">Subtraction(-)</button>
+    <button onclick="ketQuaNhan()">Multiplication(X)</button>
+    <button onclick="ketQuaChia()">Division(/)</button>
+    <p id="cong"></p>
+    <p id="tru"></p>
+    <p id="nhan"></p>
+    <p id="chia"></p>
+
+    <script>
+        function ketQuaCong() {
+            let a = +document.getElementById("a").value;
+            let b = +document.getElementById("b").value;
+            let cong =  a + b;
+            document.getElementById("cong").innerText = cong;
+        }  
+        function ketQuaTru() {
+            let a = +document.getElementById("a").value;
+            let b = +document.getElementById("b").value;
+            let tru =  a - b;
+            document.getElementById("cong").innerText = tru;
+        }  
+        function ketQuaNhan() {
+            let a = +document.getElementById("a").value;
+            let b = +document.getElementById("b").value;
+            let nhan =  a * b;
+            document.getElementById("nhan").innerText = nhan;
+        }  
+        function ketQuaChia() {
+            let a = +document.getElementById("a").value;
+            let b = +document.getElementById("b").value;
+            let chia =  a / b ;
+            document.getElementById("chia").innerText = chia;
+        }  
+    </script>
+</body>
+</html>
