@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body> 
+        <input type="number" id="A" placeholder="nhập A" value="">
+        <input type="number" id="B" placeholder="nhập B" value=""> 
+        <br> 
+    <button onclick="calculate('+')">Addition(+)</button>
+    <button onclick="calculate('-')">Subtraction(-)</button>
+    <button onclick="calculate('*')">Multiplication(X)</button>
+    <button onclick="calculate('/')">Division(/)</button>
+    <p id="result">0</p>
+  
+
+    <script>
+        function calculate(operator) {
+            let a = +document.getElementById("A").value;
+            let b = +document.getElementById("B").value;
+
+            let result;
+
+            switch (operator) {
+                case "+":
+                    result = a + b;
+                    break;
+                case "-":
+                    result = a - b;
+                    break;
+                case "*":
+                    result = a * b;
+                    break;
+                case "/":
+                    if (b == 0){
+                        result = "không hợp lệ"
+                    }else
+                    result = a / b;
+                    break;
+          }
+          alert(result);
+          document.getElementById("result").innerText = result;
+        }
+    </script>
+</body>
+
+</html>

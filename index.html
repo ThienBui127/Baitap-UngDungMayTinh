@@ -26,24 +26,28 @@
             let b = +document.getElementById("b").value;
             let cong =  a + b;
             document.getElementById("cong").innerText = cong;
+            document.getElementById("formInput").reset();
         }  
         function ketQuaTru() {
             let a = +document.getElementById("a").value;
             let b = +document.getElementById("b").value;
             let tru =  a - b;
             document.getElementById("cong").innerText = tru;
+            document.getElementById("formInput").reset();
         }  
         function ketQuaNhan() {
             let a = +document.getElementById("a").value;
             let b = +document.getElementById("b").value;
             let nhan =  a * b;
             document.getElementById("nhan").innerText = nhan;
+            document.getElementById("formInput").reset();
         }  
         function ketQuaChia() {
             let a = +document.getElementById("a").value;
             let b = +document.getElementById("b").value;
             let chia =  a / b ;
             document.getElementById("chia").innerText = chia;
+            document.getElementById("formInput").reset();
         }  
     </script>
 </body>
